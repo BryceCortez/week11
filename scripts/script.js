@@ -20,11 +20,23 @@
 
 // greet()
 
-function greet(user, time = 'day')
+// function greet(user, time = 'day')
+// {
+//     console.log(`Good ${time} ${user}`);
+//     // console.log('Hello' + str);
+// }
+
+// greet("Bryce");
+// greet("Bryce" , "Night", );
+
+
+let r = prompt("enter a radius. ");
+console.log(r)
+function circleArea (radius)
 {
-    console.log(`Good ${time} ${user}`);
-    // console.log('Hello' + str);
+    return Math.PI * radius * radius;
 }
 
-greet("Bryce" , "Night", "Morning");
-greet("Bryce");
+let area = circleArea(r).toFixed(2);
+
+alert(`The area of a circle with radius ${r} is ${area}`)
